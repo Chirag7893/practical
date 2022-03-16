@@ -33,18 +33,20 @@ class LoginViewController: BaseViewController {
     }
     
     @IBAction func btnLogin_clicked(_ sender: Any) {
-        appDelegate.navigateToHomeScreen()
-//        if self.txtEmail.text?.count == 0 {
-//            self.showSimpleAlert(message: "Please enter email address")
-//        }
-//        else if !self.txtEmail.text!.isValidEmail() {
-//            self.showSimpleAlert(message: "Please enter valid email address")
-//        }
-//        else if self.txtPassword.text?.count == 0 {
-//            self.showSimpleAlert(message: "Please enter password")
-//        }
-//        else{
-//        }
+        if self.txtEmail.text?.count == 0 {
+            self.showSimpleAlert(message: "Please enter email address")
+        }
+        else if !self.txtEmail.text!.isValidEmail() {
+            self.showSimpleAlert(message: "Please enter valid email address")
+        }
+        else if self.txtPassword.text?.count == 0 {
+            self.showSimpleAlert(message: "Please enter password")
+        }
+        else{
+            let dict = ["email": self.txtEmail.text!, "password": self.txtPassword.text!]
+            appDelegate.saveUserDetails(userDetails: dict)
+            appDelegate.navigateToHomeScreen()
+        }
     }
 }
 

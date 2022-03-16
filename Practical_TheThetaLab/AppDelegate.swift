@@ -18,6 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     let storyBoard = UIStoryboard(name: "Main", bundle: nil)
     
+    var loginUserData: [String:Any]?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         do {
@@ -33,6 +35,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         catch {
             print("could not start reachability notifier")
+        }
+        
+        if let data = UserDefaults.standard.object(forKey: kUserDetails) as? [String:Any], !data.isEmpty {
+            self.navigateToHomeScreen()
+        }
+        else{
+            self.navigateToLoginScreen()
         }
         
         return true
@@ -77,6 +86,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navigationController.navigationBar.barStyle = .black
         navigationController.interactivePopGestureRecognizer?.isEnabled = false
         appDelegate.window?.rootViewController = navigationController
+    }
+    
+    func saveUserDetails(userDetails: [String:Any]) {
+        appDelegate.loginUserData = userDetails
+        UserDefaults.standard.set(userDetails, forKey: kUserDetails)
+        UserDefaults.standard.synchronize()
+    }
+    
+    func clearAllUserDataFromPreference() {
+        appDelegate.loginUserData = nil
+        UserDefaults.standard.removePersistentDomain(forName: Bundle.main.bundleIdentifier!)
+        UserDefaults.standard.synchronize()
     }
 }
 
