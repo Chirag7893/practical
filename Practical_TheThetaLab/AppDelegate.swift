@@ -6,31 +6,77 @@
 //
 
 import UIKit
+import Reachability
+
+let kUserDetails = "UserDetails"
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
+    
+    var window: UIWindow!
+    var reachable: Reachability!
+    
+    let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        do {
+            try reachable = Reachability.init()
+        }
+        catch {
+            print("error in init Reachability")
+        }
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(self.reachabilityChanged),name: Notification.Name.reachabilityChanged, object: reachable)
+        do {
+            try reachable.startNotifier()
+        }
+        catch {
+            print("could not start reachability notifier")
+        }
+        
         return true
     }
-
-    // MARK: UISceneSession Lifecycle
-
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        // Called when a new scene session is being created.
-        // Use this method to select a configuration to create the new scene with.
-        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
+    
+    //MARK: - Reachability Method
+    @objc func reachabilityChanged(note: NSNotification) {
+        let reachable = note.object as! Reachability
+        
+        if reachable.connection != .unavailable {
+            if reachable.connection != .wifi {
+                print("Reachable via WiFi")
+            }
+            else {
+                print("Reachable via Cellular")
+            }
+        }
+        else {
+            let alert: UIAlertController = UIAlertController.init(title: "No Internet", message: "Sorry, no Internet connectivity detected. Please reconnect and try again", preferredStyle: .alert)
+            let hideAstion: UIAlertAction = UIAlertAction.init(title: "Ok", style: .default, handler: nil)
+            alert.addAction(hideAstion)
+            UIApplication.shared.keyWindow?.rootViewController?.present(alert, animated: true, completion: nil)
+        }
+        
     }
-
-    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        // Called when the user discards a scene session.
-        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+    
+    func navigateToHomeScreen() {
+        let viewController = self.storyBoard.instantiateViewController(withIdentifier: "TabbarViewController") as! TabbarViewController
+        let navigationController: UINavigationController = UINavigationController.init(rootViewController: viewController)
+        navigationController.navigationBar.isTranslucent = false
+        navigationController.navigationBar.isHidden = true
+        navigationController.navigationBar.barStyle = .black
+        navigationController.interactivePopGestureRecognizer?.isEnabled = false
+        appDelegate.window?.rootViewController = navigationController
     }
-
-
+    
+    func navigateToLoginScreen() {
+        let viewController = self.storyBoard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+        let navigationController: UINavigationController = UINavigationController.init(rootViewController: viewController)
+        navigationController.navigationBar.isTranslucent = false
+        navigationController.navigationBar.isHidden = true
+        navigationController.navigationBar.barStyle = .black
+        navigationController.interactivePopGestureRecognizer?.isEnabled = false
+        appDelegate.window?.rootViewController = navigationController
+    }
 }
 

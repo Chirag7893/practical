@@ -8,22 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		3AD0E69127E1AEC900FF9006 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD0E69027E1AEC900FF9006 /* AppDelegate.swift */; };
-		3AD0E69327E1AEC900FF9006 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD0E69227E1AEC900FF9006 /* SceneDelegate.swift */; };
-		3AD0E69527E1AEC900FF9006 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD0E69427E1AEC900FF9006 /* ViewController.swift */; };
+		3AD0E69527E1AEC900FF9006 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD0E69427E1AEC900FF9006 /* LoginViewController.swift */; };
 		3AD0E69827E1AEC900FF9006 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AD0E69627E1AEC900FF9006 /* Main.storyboard */; };
 		3AD0E69A27E1AECE00FF9006 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AD0E69927E1AECE00FF9006 /* Assets.xcassets */; };
 		3AD0E69D27E1AECE00FF9006 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AD0E69B27E1AECE00FF9006 /* LaunchScreen.storyboard */; };
+		3AD0E6A527E1B65A00FF9006 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD0E6A427E1B65A00FF9006 /* ProfileViewController.swift */; };
+		3AD0E6A727E1B66B00FF9006 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD0E6A627E1B66B00FF9006 /* HomeViewController.swift */; };
+		3AD0E6AB27E1B69600FF9006 /* BaseResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD0E6AA27E1B69600FF9006 /* BaseResponseModel.swift */; };
+		3AD0E6AD27E1C46C00FF9006 /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD0E6AC27E1C46C00FF9006 /* TabbarViewController.swift */; };
+		7D88C36C84930108C689C9BB /* Pods_Practical_TheThetaLab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B79EFAA28CA1F295FBC354 /* Pods_Practical_TheThetaLab.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		187A9F042998E42C684E1B31 /* Pods-Practical_TheThetaLab.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Practical_TheThetaLab.release.xcconfig"; path = "Target Support Files/Pods-Practical_TheThetaLab/Pods-Practical_TheThetaLab.release.xcconfig"; sourceTree = "<group>"; };
 		3AD0E68D27E1AEC900FF9006 /* Practical_TheThetaLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Practical_TheThetaLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AD0E69027E1AEC900FF9006 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3AD0E69227E1AEC900FF9006 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3AD0E69427E1AEC900FF9006 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3AD0E69427E1AEC900FF9006 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3AD0E69727E1AEC900FF9006 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3AD0E69927E1AECE00FF9006 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AD0E69C27E1AECE00FF9006 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3AD0E69E27E1AECE00FF9006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AD0E6A427E1B65A00FF9006 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		3AD0E6A627E1B66B00FF9006 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3AD0E6AA27E1B69600FF9006 /* BaseResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseResponseModel.swift; sourceTree = "<group>"; };
+		3AD0E6AC27E1C46C00FF9006 /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
+		A7B79EFAA28CA1F295FBC354 /* Pods_Practical_TheThetaLab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Practical_TheThetaLab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F020C3EA53C7A5240898A812 /* Pods-Practical_TheThetaLab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Practical_TheThetaLab.debug.xcconfig"; path = "Target Support Files/Pods-Practical_TheThetaLab/Pods-Practical_TheThetaLab.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D88C36C84930108C689C9BB /* Pods_Practical_TheThetaLab.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +53,8 @@
 			children = (
 				3AD0E68F27E1AEC900FF9006 /* Practical_TheThetaLab */,
 				3AD0E68E27E1AEC900FF9006 /* Products */,
+				41FA3A6DEF0DD2A6C9AF2930 /* Pods */,
+				75B3A768E727A48226037CB1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +70,50 @@
 			isa = PBXGroup;
 			children = (
 				3AD0E69027E1AEC900FF9006 /* AppDelegate.swift */,
-				3AD0E69227E1AEC900FF9006 /* SceneDelegate.swift */,
-				3AD0E69427E1AEC900FF9006 /* ViewController.swift */,
+				3AD0E6A927E1B69600FF9006 /* Model */,
+				3AD0E6A827E1B67100FF9006 /* View Controller */,
 				3AD0E69627E1AEC900FF9006 /* Main.storyboard */,
 				3AD0E69927E1AECE00FF9006 /* Assets.xcassets */,
 				3AD0E69B27E1AECE00FF9006 /* LaunchScreen.storyboard */,
 				3AD0E69E27E1AECE00FF9006 /* Info.plist */,
 			);
 			path = Practical_TheThetaLab;
+			sourceTree = "<group>";
+		};
+		3AD0E6A827E1B67100FF9006 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3AD0E69427E1AEC900FF9006 /* LoginViewController.swift */,
+				3AD0E6AC27E1C46C00FF9006 /* TabbarViewController.swift */,
+				3AD0E6A627E1B66B00FF9006 /* HomeViewController.swift */,
+				3AD0E6A427E1B65A00FF9006 /* ProfileViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		3AD0E6A927E1B69600FF9006 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3AD0E6AA27E1B69600FF9006 /* BaseResponseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		41FA3A6DEF0DD2A6C9AF2930 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F020C3EA53C7A5240898A812 /* Pods-Practical_TheThetaLab.debug.xcconfig */,
+				187A9F042998E42C684E1B31 /* Pods-Practical_TheThetaLab.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		75B3A768E727A48226037CB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7B79EFAA28CA1F295FBC354 /* Pods_Practical_TheThetaLab.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +123,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3AD0E6A127E1AECE00FF9006 /* Build configuration list for PBXNativeTarget "Practical_TheThetaLab" */;
 			buildPhases = (
+				A3493A1A002F47DD14E735BA /* [CP] Check Pods Manifest.lock */,
 				3AD0E68927E1AEC900FF9006 /* Sources */,
 				3AD0E68A27E1AEC900FF9006 /* Frameworks */,
 				3AD0E68B27E1AEC900FF9006 /* Resources */,
+				5F37632FABEBA98FB96FA119 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +184,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5F37632FABEBA98FB96FA119 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Practical_TheThetaLab/Pods-Practical_TheThetaLab-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Practical_TheThetaLab/Pods-Practical_TheThetaLab-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Practical_TheThetaLab/Pods-Practical_TheThetaLab-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3493A1A002F47DD14E735BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Practical_TheThetaLab-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3AD0E68927E1AEC900FF9006 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AD0E69527E1AEC900FF9006 /* ViewController.swift in Sources */,
+				3AD0E6A727E1B66B00FF9006 /* HomeViewController.swift in Sources */,
+				3AD0E69527E1AEC900FF9006 /* LoginViewController.swift in Sources */,
+				3AD0E6AD27E1C46C00FF9006 /* TabbarViewController.swift in Sources */,
 				3AD0E69127E1AEC900FF9006 /* AppDelegate.swift in Sources */,
-				3AD0E69327E1AEC900FF9006 /* SceneDelegate.swift in Sources */,
+				3AD0E6AB27E1B69600FF9006 /* BaseResponseModel.swift in Sources */,
+				3AD0E6A527E1B65A00FF9006 /* ProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +313,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,7 +368,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -284,6 +380,7 @@
 		};
 		3AD0E6A227E1AECE00FF9006 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F020C3EA53C7A5240898A812 /* Pods-Practical_TheThetaLab.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,8 +391,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,12 +404,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		3AD0E6A327E1AECE00FF9006 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 187A9F042998E42C684E1B31 /* Pods-Practical_TheThetaLab.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -321,8 +421,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,7 +434,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
